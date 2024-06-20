@@ -213,7 +213,21 @@ html, body {
 
 .project {
     
-    margin: 0 50px;
+    margin: 10px 50px;
+    text-align: center;
+    
+    width: 470px;
+    background-color: white;
+    /* border: 1px solid #00ffa1; */
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.fake__project {
+    justify-content: center;
+    align-content: end;
+    
+    margin: 10px 50px;
     text-align: center;
     
     width: 470px;
@@ -263,6 +277,21 @@ html, body {
     padding: 12px 28px;
     border-radius: 5px;
     background-color: #00ffa1;
+    font-style: italic;
+    color:black;
+    
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+.btn__comic{
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: #ff005e;
     font-style: italic;
     color:black;
     
@@ -384,3 +413,13 @@ html, body {
     /* font-style: italic; */
 }
 
+.comic__img {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
