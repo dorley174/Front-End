@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        #footer {
+        
+                    background-color: black;
+                    width: 100%;
+                    height:100px;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-top: 2px solid #00ffa1;
+                }
+                
+        #contact {
+        
+                    font-size: 30px;
+                }
+                
+        #social-icons {
+        
+                    display: flex;
+                    ;
+                }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+
+        // Функции для прокрутки к надписям
+        function scrollToFirst() {
+            document.getElementById('first').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSecond() {
+            document.getElementById('second').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToThird() {
+            document.getElementById('third').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToFourth() {
+            document.getElementById('fourth').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    
+    
+    <h1 class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo nav-list__link--active">Danil <strong>«Dorley» </strong> Valiev</a>
+                
+                <ul class="nav-list">
+                    <button class="nav-list__item" onclick="scrollToFirst()"> <a class="nav-list__link">About me</a> </button>
+                    <button class="nav-list__item" onclick="scrollToSecond()"> <a class="nav-list__link">Projects</a> </button>
+                    <button class="nav-list__item" onclick="scrollToThird()"> <a class="nav-list__link">Skills</a> </button>
+                    <button class="nav-list__item" onclick="scrollToFourth()"> <a class="nav-list__link">Contacts</a> </button>
+                
+            
+                </ul>
+            </div>  
+        </div>   
+    </h1>
+   
+    <h2 class="header" id="first">   
+        <div class="header_wrapper">
+            <h1 class="header__title">
+                <strong>Hi, my name is <em> <span style="color: #00ffa1"> Danil </span> </em></strong> <br>
+                
+            </h1> 
+            <div class="header__text">
+                <p>a 1st year student at Innopolis University</p> <br>
+                <p>and a beginner front-end developer</p> <br>
+            </div>
+            <a class = "btn" onclick="scrollToSecond()">Scroll!</a>
+        </div>
+    </h2>
+
+    <h3 id="second">   
+        <main class="section">
+            <div class="container">
+                <h2 class="title1">Projects</h2>
+                    <ul class="projects">
+
+                        <li class="fake__project">                              
+                            <img src="" id="comic__img"  alt="">
+                            <h2 id="comic__date" class="project__title">Wait, what is it?</h2>
+                            <h3 id="comic__title" class="project__description">That project isn't mine. HAVE I BEEN HACKED?</h3>
+                            <button  id="fetch"  class="btn__comic" >DON'T CLICK ME</button>                           
+                        </li> 
+
+                        <li class="project">
+                            <img src="./images/electgen.jpg" class="project__img" style="object-fit: cover; width: 100%;">
+                            <h4 class="project__title">Elective Gen</h4>
+                            <h5 class="project__description">Automatic placement of students from different courses into their chosen summer electives based on their GPA and personal priorities</h5>
+                            <a href="#!" class="btn">Soon</a>
+                        </li> 
+
+                        <li class="project">
+                            <img src="./images/GITCGDT.jpg" class="project__img" style="object-fit: cover; width: 100%;">
+                            <h4 class="project__title">Genshin Impact TCG DeckTracker</h4>
+                            <h5 class="project__description">An extension that allows you to track and save data from matches played in the Cat's Tail tavern. The matches will also develop a winning strategy.</h5>
+                            <a href="#!" class="btn">Soon</a>
+                        </li> 
+
+                        <li class="project">
+                            <img src="/images/MG.jpg" class="project__img" style="object-fit: cover; width: 100%;">
+                            <h4 class="project__title">Mind Games</h4>
+                            <h5 class="project__description">An indie game with different tasks and solutions in the same location, based on human ingenuity</h5>
+                            <a href="#!" class="btn"> Unavailable </a>
+                        </li>
+
+                       
+
+                        
+                        
+
+                    </ul>
+                </h2>
+            </div>
+        </main>
+    </h3>
+
+    <h8 id="third" class="header3"> 
+        <main class="section">
+        <div class="container">
+            <h2 class="title2">Skills</h2>
+            
+            <div class="page3-container">
+                <div class="list-container">
+                    <ul class="skills">
+                        <h7 class="skill"> <strong> <em> Programming language:</em> </strong>   <br> C++ <br> Java <br> Python </h7> 
+                        <h7 class="skill"> <strong> <em>Language:</em></strong> <br> Russian <br> English <br> German</h7>
+                        <h7 class="skill"> <strong> <em>Education:</em></strong> <br>
+                            Liceum №148, Chelyabinsk, 2012-2016 <br>
+                            Liceum №97, Chelyabinsk, 2017-2023 <br>
+                            Innopolis University, Innopolis, 2023 - now 
+                        </h7>
+                        <h7 class="skill"> <strong> <em>Hobbies:</em></strong> <br> Gamedev <br> Design <br> Chess <br> Speedcubing </h7>
+
+                    </ul>
+                </div>
+                <div class="photo-container">
+                  <div class="container">
+                    <img src="./images/photo.jpg" style="border-radius: 10px;" alt="avatar">
+                  </div>
+                  <div class="photo-text"> <em> <strong>«With great power comes great responsibility»</strong> </em> <br> Dorley translated as <br> <em> <strong>«With great photo-slider comes overdue dedline»</strong> </em></div>
+        
+                
+                </div>
+
+                
+              </div>
+              
+
+            </div>
+        </main>
+    </h8>   
+    
+
+    
+
+
+
+
+
+   
+    <div id = "fourth">
+        <div id="footer">
+            <a href="mailto:d.valiev@innopolis.university" class="logo nav-list__link--active">d.valiev@innopolis.university</a>
+              <div id="social-icons">
+                <a href="https://www.vk.com/dorley"><img class="social-icon" src="./images/vk.png" alt="VK"></a>
+                <a href="https://www.youtube.com/channel/UCcvCAxRYOdrV-bnIE8otVTQ"><img class="social-icon" src="./images/youtube.png" alt="YouTube"></a>
+                <a href="https://www.steamcommunity.com/id/Dorley74"><img class="social-icon" src="./images/steam.png" alt="Steam"></a>
+                <a href="https://github.com/dorley174"><img class="social-icon" src="./images/github.png" alt="GitHub"></a>
+                <a href="https://discordapp.com/users/579673615902179330"><img class="social-icon" src="./images/discord.png" alt="Discord"></a>
+                <a href="https://telegram.org/dorley"><img class="social-icon" src="./images/telegram.png" alt="Telegram"></a> 
+                <a href="https://twitch.tv/dorleyyyy"><img class="social-icon" src="./images/twitch.png" alt="twitch"></a>   
+                <a href="https://ru.pinterest.com/Dorleyy/"><img class="social-icon" src="./images/pinterest.png" alt="Pinterest"></a>
+
+                <!-- TBA socials:
+                <i href="#"><img class="social-icon" src="./images/facebook.png" alt="Facebook"></i>
+                <i href="#"><img class="social-icon" src="./images/tiktok.png" alt="TikTok"></i>
+                <i href="#"><img class="social-icon" src="./images/i.png" alt="Instagram"></i>                
+                <i href="#"><img class="social-icon" src="./images/X.png" alt="Twitter"></i>
+                -->
+                          
+                             
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
