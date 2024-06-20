@@ -1,2 +1,2 @@
 # Front-End Web Developing
-# Website available in https://dorley174.github.io/Portfolio/index.html
+# Website available in https://dorley174.github.io/Front-End/index.html
