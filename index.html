@@ -54,6 +54,7 @@
 </head>
 <body>
     
+    
     <h1 class="nav">
         <div class="container">
             <div class="nav-row">
@@ -64,6 +65,7 @@
                     <button class="nav-list__item" onclick="scrollToSecond()"> <a class="nav-list__link">Projects</a> </button>
                     <button class="nav-list__item" onclick="scrollToThird()"> <a class="nav-list__link">Skills</a> </button>
                     <button class="nav-list__item" onclick="scrollToFourth()"> <a class="nav-list__link">Contacts</a> </button>
+                
             
                 </ul>
             </div>  
@@ -80,7 +82,7 @@
                 <p>a 1st year student at Innopolis University</p> <br>
                 <p>and a beginner front-end developer</p> <br>
             </div>
-            <a href="#!" class = "btn">Download CV</a>
+            <a class = "btn" onclick="scrollToSecond()">Scroll!</a>
         </div>
     </h2>
 
@@ -89,6 +91,21 @@
             <div class="container">
                 <h2 class="title1">Projects</h2>
                     <ul class="projects">
+
+                        <li class="fake__project">                              
+                            <img src="" id="comic__img"  alt="">
+                            <h2 id="comic__date" class="project__title">Wait, what is it?</h2>
+                            <h3 id="comic__title" class="project__description">That project isn't mine. HAVE I BEEN HACKED?</h3>
+                            <button  id="fetch"  class="btn__comic" >DON'T CLICK ME</button>                           
+                        </li> 
+
+                        <li class="project">
+                            <img src="./images/electgen.jpg" class="project__img" style="object-fit: cover; width: 100%;">
+                            <h4 class="project__title">Elective Gen</h4>
+                            <h5 class="project__description">Automatic placement of students from different courses into their chosen summer electives based on their GPA and personal priorities</h5>
+                            <a href="#!" class="btn">Soon</a>
+                        </li> 
+
                         <li class="project">
                             <img src="./images/GITCGDT.jpg" class="project__img" style="object-fit: cover; width: 100%;">
                             <h4 class="project__title">Genshin Impact TCG DeckTracker</h4>
@@ -97,18 +114,17 @@
                         </li> 
 
                         <li class="project">
-                            <img src="./images/MG.jpg" class="project__img" style="object-fit: cover; width: 100%;">
+                            <img src="/images/MG.jpg" class="project__img" style="object-fit: cover; width: 100%;">
                             <h4 class="project__title">Mind Games</h4>
                             <h5 class="project__description">An indie game with different tasks and solutions in the same location, based on human ingenuity</h5>
                             <a href="#!" class="btn"> Unavailable </a>
                         </li>
 
-                        <li class="project">
-                            <img src="./images/electgen.jpg" class="project__img" style="object-fit: cover; width: 100%;">
-                            <h4 class="project__title">Elective Gen</h4>
-                            <h5 class="project__description">Automatic placement of students from different courses into their chosen summer electives based on their GPA and personal priorities</h5>
-                            <a href="#!" class="btn">Soon</a>
-                        </li> 
+                       
+
+                        
+                        
+
                     </ul>
                 </h2>
             </div>
@@ -139,13 +155,25 @@
                     <img src="./images/photo.jpg" style="border-radius: 10px;" alt="avatar">
                   </div>
                   <div class="photo-text"> <em> <strong>«With great power comes great responsibility»</strong> </em> <br> Dorley translated as <br> <em> <strong>«With great photo-slider comes overdue dedline»</strong> </em></div>
+        
+                
                 </div>
+
+                
               </div>
               
 
-        </div>
-    </main>
-</h8>   
+            </div>
+        </main>
+    </h8>   
+    
+
+    
+
+
+
+
+
    
     <div id = "fourth">
         <div id="footer">
@@ -173,11 +201,16 @@
         </div>
         
     </div>
-
-    
-    
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+  
+
 
 
 
