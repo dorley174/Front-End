@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
             </li>
 
             <li className="project">
-              <Image alt="" src="/images/GITCGDT.jpg" className="project__img" width={500} height={500} style={{ objectFit: 'cover', width: '100%' }}/>
+              <img className="project__img" src="./images/GITCGDT.jpg" alt="" style="objectFit: 'cover', width: '100%'" />
               <h4 className="project__title">Genshin Impact TCG DeckTracker</h4>
               <h5 className="project__description">
                 An extension that allows you to track and save data from matches
