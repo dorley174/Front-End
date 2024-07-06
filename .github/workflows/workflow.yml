@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ "HW5" ]
+  pull_request:
+    branches: [ "HW5" ]
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: installing node
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20
+      - name: installing pnpm
+        uses: pnpm/action-setup@v4.0.0
+        with:
+          version: 9.3.0
+          run_install: true
+
+      - name: linter
+        run: pnpm run lint
+      - name: check
+        run: pnpm run check
+
+      - name: build
+        run: pnpm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4.0.5
