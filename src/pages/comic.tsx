@@ -52,15 +52,13 @@ const Comic: React.FC = () => {
                 </div>
             </h1>
             <div className='comic__page'>
-                <button className='btn' onClick={fetchComic}>Are you sure you want to see this?</button>
                 <h2>{comicTitle}</h2>
                 {comicImage && <Image src={comicImage} alt={comicTitle} width={500} height={500}/>}
                 <p>{comicDate}</p>
-                <Link href="/">
-                    <button className='btn'>Go back</button>
-                </Link>
+                <button className='btn' onClick={fetchComic}>Are you sure you want to see this?</button>
+                <Link href="/"> <button className='btn'>Go back</button> </Link>
             
-        </div>
+            </div>
         </header>
     );
 };
