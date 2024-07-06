@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Projects: React.FC = () => {
@@ -26,7 +25,7 @@ const Projects: React.FC = () => {
             </li>
 
             <li className="project">
-              <Image alt="" src="/images/electgen.jpg" className="project__img" width={500} height={500} style={{ objectFit: 'cover', width: '100%' }} />
+              <img className="project__img" src="./images/electgen.jpg" alt="" />
               <h4 className="project__title">Elective Gen</h4>
               <h5 className="project__description">
                 Automatic placement of students from different courses into
@@ -52,7 +51,7 @@ const Projects: React.FC = () => {
             </li>
 
             <li className="project">
-              <Image alt="" src="/images/MG.jpg" className="project__img" width={500} height={500} style={{ objectFit: 'cover', width: '100%' }} />
+              <img className="project__img" src="./images/MG.jpg" alt="" />
               <h4 className="project__title">Mind Games</h4>
               <h5 className="project__description">
                 An indie game with different tasks and solutions in the same
