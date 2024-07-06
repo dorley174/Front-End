@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Skills: React.FC = () => {
   return (
@@ -54,7 +53,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="photo-container">
               <div className="container">
-              <Image alt="" src="/images/photo.jpg"  width={500} height={500} style={{ objectFit: 'cover', width: '100%', borderRadius: '10px'}} />
+              <img src="./images/photo.jpg" alt="" style={{ objectFit: 'cover', width: '100%', borderRadius: '10px'}} />
               </div>
               <div className="photo-text">
                 {' '}
