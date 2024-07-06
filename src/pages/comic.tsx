@@ -52,9 +52,9 @@ const Comic: React.FC = () => {
                 </div>
             </h1>
             <div className='comic__page'>
-                <h2>{comicTitle}</h2>
                 {comicImage && <Image src={comicImage} alt={comicTitle} width={500} height={500}/>}
-                <p>{comicDate}</p>
+                <h2>{comicTitle}</h2>
+                <p> <strong> {comicDate} </strong> </p>
                 <button className='btn__comic' onClick={fetchComic}>Are you sure you want to see this?</button>
                 <Link href="/"> <button className='btn'>Go back</button> </Link>
             
