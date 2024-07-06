@@ -169,11 +169,6 @@ html, body {
     align-items: center;
 }
 
-.comic__page > * {
-    margin-top: 10px; /* Отступ сверху */
-    margin-bottom: 10px; /* Отступ снизу */
-  }
-
 .header2 {
     background-size: cover;
     background-position: center center;
