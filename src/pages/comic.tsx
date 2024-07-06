@@ -55,7 +55,7 @@ const Comic: React.FC = () => {
                 <h2>{comicTitle}</h2>
                 {comicImage && <Image src={comicImage} alt={comicTitle} width={500} height={500}/>}
                 <p>{comicDate}</p>
-                <button className='btn' onClick={fetchComic}>Are you sure you want to see this?</button>
+                <button className='btn__comic' onClick={fetchComic}>Are you sure you want to see this?</button>
                 <Link href="/"> <button className='btn'>Go back</button> </Link>
             
             </div>
